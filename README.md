@@ -32,7 +32,7 @@ Standalone node executable:
 $ ros2 run voltage_shutdown voltage_shutdown_node
 ```
 
-example launch file for the composable node:
+Example launch file:
 ```sh
 ros2 launch voltage_shutdown voltage.launch.py
 ```
