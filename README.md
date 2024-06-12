@@ -29,18 +29,15 @@ Dowload ROS2 package by using 'git clone'
 # ROS2 Launch sequence
 `Ubuntu Shell #1`
 ```
-$ ros2 run voltage_shutdown voltage_shutdown_node  
+$ ros2 run voltage_shutdown voltage_shutdown_node
+```
 
 ## Parameters
 
-```sh
-# standalone executable
+```
 ros2 run voltage_shutdown voltage_shutdown_node --ros-args -p param1:=arg1 -p param2:=arg2
 ```
 
-### Static Camera Stream Configuration
-
-The camera stream is configured once when the node starts via the following static read-only parameters:
 
 | name              | type                  | description |
 | ----------------- | --------------------- |  ---------- |
