@@ -1,4 +1,4 @@
-# voltage_shutdown
+# ros2_voltage_shutdown
 ROS2-subscriber to shutdown a system below a certaoin voltage level.
 
 **Input:** Voltage level from a BatteryState topic \
@@ -30,3 +30,19 @@ Dowload ROS2 package by using 'git clone'
 `Ubuntu Shell #1`
 ```
 $ ros2 run voltage_shutdown voltage_shutdown_node  
+
+## Parameters
+
+```sh
+# standalone executable
+ros2 run voltage_shutdown voltage_shutdown_node --ros-args -p param1:=arg1 -p param2:=arg2
+```
+
+### Static Camera Stream Configuration
+
+The camera stream is configured once when the node starts via the following static read-only parameters:
+
+| name              | type                  | description |
+| ----------------- | --------------------- |  ---------- |
+| `topic`          | `string` | selects the topic [default: `/battery_status`]
+| `voltage`            | `double`              | defines the voltage triggering the shutdown [default: `11.0`].
