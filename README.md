@@ -1,5 +1,5 @@
 # ros2_voltage_shutdown
-ROS2-subscriber to shutdown a system below a certaoin voltage level.
+ROS2-subscriber to shutdown a system below a certain voltage level.
 
 **Input:** Voltage level from a BatteryState topic \
 **Output:** Shutdown command.
@@ -27,9 +27,14 @@ Dowload ROS2 package by using 'git clone'
 ```
 
 # ROS2 Launch sequence
-`Ubuntu Shell #1`
+Standalone node executable:
 ```
 $ ros2 run voltage_shutdown voltage_shutdown_node
+```
+
+example launch file for the composable node:
+```sh
+ros2 launch voltage_shutdown voltage.launch.py
 ```
 
 ## Parameters
