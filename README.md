@@ -1,13 +1,15 @@
 # ros2_voltage_shutdown
 ROS2-subscriber to shutdown a system below a certain voltage level.
 
+I use LifePo4 batteries for my robot with an integrated BMS. The BMS will turn off the voltage, as soon as the voltage drops lower than 10V. So i wanted a script to shutdown my system safely.
+
 **Input:** Voltage level from a BatteryState topic \
 **Output:** Shutdown command.
 
 # ROS2 Package/Module Behaviour
 
 # Prerequisite: Software
-* Ubuntu 2.04 (64bit) or newer
+* Ubuntu 22.04 (64bit) or newer
 * Robot Operating System 2, ROS2 (Version Humble)
 * A ROS2-publisher for the voltage like the [pet_ros2_currentsensor](https://github.com/Pet-Series/pet_ros2_currentsensor_ina219_pkg)
 
