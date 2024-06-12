@@ -9,7 +9,7 @@ ROS2-subscriber to shutdown a system below a certaoin voltage level.
 # Prerequisite: Software
 * Ubuntu 2.04 (64bit) or newer
 * Robot Operating System 2, ROS2 (Version Humble)
-* A ROS2-publisher for the voltage
+* A ROS2-publisher for the voltage like the [pet_ros2_currentsensor](https://github.com/Pet-Series/pet_ros2_currentsensor_ina219_pkg)
 
 ## Dowload and install this ROS2 packages
 Create a ROS2 workspace (in my exampel '~/ws_ros2/') \
