@@ -52,7 +52,7 @@ ros2 run voltage_shutdown voltage_shutdown_node --ros-args -p param1:=arg1 -p pa
 | `voltage`            | `double`              | defines the voltage triggering the shutdown [default: `11.0`].
 
 ## Shutdown without password
-Use sudo visudo to edit the sudoers file. Add following at the end. Update yout-user:
+Use sudo visudo to edit the sudoers file. Add following at the end. Update your-user:
 
 ```sh
 your-user  ALL=(ALL:ALL) NOPASSWD: /sbin/shutdown -h now
