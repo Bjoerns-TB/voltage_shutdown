@@ -13,7 +13,8 @@
 # limitations under the License.
 
 import rclpy
-import os
+#import os
+import subprocess
 from rclpy.node import Node
 from sensor_msgs.msg  import BatteryState
 
@@ -39,7 +40,8 @@ class MinimalSubscriber(Node):
         # print(msg.voltage)
         # print(voltage)
         if msg.voltage <= voltage:
-            os.system("sudo shutdown -h now")
+            #os.system("sudo shutdown -h now")
+            subprocess.call(["sudo", "shutdown", "-h", "now"])
 
 
 def main(args=None):
